@@ -21,4 +21,6 @@ Mas o que acontece entre o "enter" e a página HTML renderizada?
 
 - O contexto do Spring MVC:
 
+![Screenshot](img/mvc.png)
+
 
