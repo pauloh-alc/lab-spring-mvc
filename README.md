@@ -7,6 +7,11 @@ Repositório de estudos para criação de Aplicações Web em java, utilizando J
 - Spring Framework: é apenas um, dentre todo conjunto de projetos que o spring possui (principais funcionalidades - spring MVC, suporte para JDBC, JPA, injeção de dependências [dependency injection - DI])
 - Injeção de dependências: é um tipo de inversão de controle (ou Inversion Of Control - IoC) que dá o nome ao processo de prover instâncias de classes que tem um objeto que precisa para funcionar.
 - Observações: O Spring Framework é a base do ecossistema e a injeção de dependências é a base do spring Framework (vantagem: baixo acoplamento e flexibilidade)
+- Spring boot: analisa o projeto e automaticamente o configura.
+- Spring Security: projeto que trata da segurança em nível de aplicação.
+- Thymeleaf: não é um projeto Spring, mas uma biblioteca que foi criada para facilitar a criação da camada de view.
+- Maven: gerenciador de dependências.
+- Spring Tool Suit: STS é um eclipse com vários plugins úteis para trabalho com o Spring.
 
 ## Spring MVC
 
@@ -41,4 +46,6 @@ Obs: esse exemplo foi retirado de um pdf gratuíto fornecido pela empresa Algawo
 
 - Controller: intercepta as requisições/trata as requisições.
 - Model: possui regras de negócios, acessando banco de dados ou fazendo validações nessa camada.  
-- View: vai "desenhar", renderizar e transformar em HTML os dados, para que o usuário consiga visualizar as informações, pois enquanto estavam no controller e no model, estávamos trabalhando com classes Java, e não em algo visual para browser exibir ao usuário. 
+- View: vai "desenhar", renderizar e transformar em HTML os dados, para que o usuário consiga visualizar as informações, pois enquanto estavam no controller e no model, estávamos trabalhando com classes Java, e não em algo visual para browser exibir ao usuário.
+
+## Criação de controller 
