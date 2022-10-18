@@ -1,6 +1,16 @@
 # lab-spring-mvc
 Repositório de estudos para criação de Aplicações Web em java, utilizando Java Spring MVC.
 
+## Projetos:
+- Gestão de festas - utilização do mvc de forma simples (objetivo compreender como mvc funciona);
+- Cadastro de Jedi - utilização do mvc de forma simples (idem);
+
+
+- 1: Gestão de festas - tela de autenticação
+
+![Screenshot](img/tela-autenticacao.png)
+![Screenshot](img/tela-cadastro-de-convidados.png)
+
 ## Conceitos iniciais
 
 - Spring: não é um framework apenas, mas um conjunto de projetos (o spring seria mais um Ecossitema)
