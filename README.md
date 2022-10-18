@@ -3,28 +3,28 @@ Repositório de estudos para criação de Aplicações Web em java, utilizando J
 
 ## Projetos:
 
-Obs: os projetos nesse repositório são projetos que estou seguindo seu processo de criação ou por meio de algum material de leitura digital ou através de vídeos. Projetos pessoais são colocados em repositórios individuais. 
+Os projetos criados nesse repositório foram desenvolvidos seguindo algum material de leitura digital ou através de vídeos. Projetos pessoais são colocados em repositórios individuais. 
 
-- 1-Gestão de festas
+1. Gestão de festas
 
-Objetivo: começar ententer o padrão de projeto MVC.
-O que foi abordado: 
-* Criação de uma classe no pacote controller chamada ConvidadosController composta por dois métodos.
-* Os métodos foram assinados com as anotações @GetMapping e @PostMapping com o objetivo de mapear quais métodos iriam responder a determinadas requisições.
-* Ainda na classe que representa o controller (intercepta requisições) foi criado um atributo de instância chamado convidados assinado com a anotação @Autowired para a injeção de dependência.
-* A classe Convidado presente no pacote model, representa um dos elementos do Model - uma classe bem simples, sem regras muitas regras e composta por três campos.
-* Uso de uma interface chamada Convidados que extend de JpaRepository
-* A View do projeto está presente em src/main/resource/templates, que possui apenas um arquivo .html que faz uso do bootstrap e thymeleaf
-* O aquivo application.properties possui algumas configurações básicas relacionada ao thymeleaf e a configuração da URL, nome e senha da base de dados.
-* Esse projeto possui também um arquivo import.sql que foi usado para criação de uma in-memory database. Porém, o arquivo application.properties está configurado para criar uma base de dados chamada festa no MySQL.  
+* Objetivo: começar ententer o padrão de projeto MVC.
+* O que foi abordado: 
+-- Criação de uma classe no pacote controller chamada ConvidadosController composta por dois métodos.
+-- Os métodos foram assinados com as anotações @GetMapping e @PostMapping com o objetivo de mapear quais métodos iriam responder a determinadas requisições.
+-- Ainda na classe que representa o controller (intercepta requisições) foi criado um atributo de instância chamado convidados assinado com a anotação @Autowired para a injeção de dependência.
+-- A classe Convidado presente no pacote model, representa um dos elementos do Model, uma classe bem simples, sem regras muitas regras e composta por três campos.
+-- Uso de uma interface chamada Convidados que extend de JpaRepository
+-- A View do projeto está presente em src/main/resource/templates, que possui apenas um arquivo .html que faz uso do bootstrap e thymeleaf
+-- O aquivo application.properties possui algumas configurações básicas relacionada ao thymeleaf e a configuração da URL, nome e senha da base de dados.
+-- Esse projeto possui também um arquivo import.sql que foi usado para criação de uma in-memory database. Porém, o arquivo application.properties está configurado para criar uma base de dados chamada festa no MySQL.  
 
-- 2-Cadastro de Jedi - básico
-Objetivo: começar ententer o padrão de projeto MVC.
-O que foi abordado:
+2. Cadastro de Jedi - básico
+- Objetivo: começar ententer o padrão de projeto MVC.
+- O que foi abordado:
 
-- 1: Gestão de festas - tela de autenticação
-
+1 - Gestão de festas - tela de autenticação
 ![Screenshot](img/tela-autenticacao.png)
+2 - Gestão de festas - tela de exibição e cadastro
 ![Screenshot](img/tela-cadastro-de-convidados.png)
 
 ## Conceitos iniciais
@@ -76,4 +76,4 @@ Obs: esse exemplo foi retirado de um pdf gratuíto fornecido pela empresa Algawo
 - Model: possui regras de negócios, acessando banco de dados ou fazendo validações nessa camada.  
 - View: vai "desenhar", renderizar e transformar em HTML os dados, para que o usuário consiga visualizar as informações, pois enquanto estavam no controller e no model, estávamos trabalhando com classes Java, e não em algo visual para browser exibir ao usuário.
 
-## Criação de controller 
+## Criação de controller
