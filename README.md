@@ -2,9 +2,25 @@
 Repositório de estudos para criação de Aplicações Web em java, utilizando Java Spring MVC.
 
 ## Projetos:
-- Gestão de festas - utilização do mvc de forma simples (objetivo compreender como mvc funciona);
-- Cadastro de Jedi - utilização do mvc de forma simples (idem);
 
+Obs: os projetos nesse repositório são projetos que estou seguindo seu processo de criação ou por meio de algum material de leitura digital ou através de vídeos. Projetos pessoais são colocados em repositórios individuais. 
+
+- 1-Gestão de festas
+
+Objetivo: começar ententer o padrão de projeto MVC.
+O que foi abordado: 
+* Criação de uma classe no pacote controller chamada ConvidadosController composta por dois métodos.
+* Os métodos foram assinados com as anotações @GetMapping e @PostMapping com o objetivo de mapear quais métodos iriam responder a determinadas requisições.
+* Ainda na classe que representa o controller (intercepta requisições) foi criado um atributo de instância chamado convidados assinado com a anotação @Autowired para a injeção de dependência.
+* A classe Convidado presente no pacote model, representa um dos elementos do Model - uma classe bem simples, sem regras muitas regras e composta por três campos.
+* Uso de uma interface chamada Convidados que extend de JpaRepository
+* A View do projeto está presente em src/main/resource/templates, que possui apenas um arquivo .html que faz uso do bootstrap e thymeleaf
+* O aquivo application.properties possui algumas configurações básicas relacionada ao thymeleaf e a configuração da URL, nome e senha da base de dados.
+* Esse projeto possui também um arquivo import.sql que foi usado para criação de uma in-memory database. Porém, o arquivo application.properties está configurado para criar uma base de dados chamada festa no MySQL.  
+
+- 2-Cadastro de Jedi - básico
+Objetivo: começar ententer o padrão de projeto MVC.
+O que foi abordado:
 
 - 1: Gestão de festas - tela de autenticação
 
@@ -13,15 +29,17 @@ Repositório de estudos para criação de Aplicações Web em java, utilizando J
 
 ## Conceitos iniciais
 
-- Spring: não é um framework apenas, mas um conjunto de projetos (o spring seria mais um Ecossitema)
-- Spring Framework: é apenas um, dentre todo conjunto de projetos que o spring possui (principais funcionalidades - spring MVC, suporte para JDBC, JPA, injeção de dependências [dependency injection - DI])
+- Spring: não é um framework apenas, mas um conjunto de projetos (o spring seria mais um Ecossistema).
+- Spring Framework: é apenas um, dentre todo conjunto de projetos que o spring possui (principais funcionalidades - spring MVC, suporte para JDBC, JPA, injeção de dependências [dependency injection - DI]).
 - Injeção de dependências: é um tipo de inversão de controle (ou Inversion Of Control - IoC) que dá o nome ao processo de prover instâncias de classes que tem um objeto que precisa para funcionar.
-- Observações: O Spring Framework é a base do ecossistema e a injeção de dependências é a base do spring Framework (vantagem: baixo acoplamento e flexibilidade)
+- Observações: O Spring Framework é a base do ecossistema e a injeção de dependências é a base do spring Framework (vantagem: baixo acoplamento e flexibilidade).
 - Spring boot: analisa o projeto e automaticamente o configura.
 - Spring Security: projeto que trata da segurança em nível de aplicação.
 - Thymeleaf: não é um projeto Spring, mas uma biblioteca que foi criada para facilitar a criação da camada de view.
 - Maven: gerenciador de dependências.
 - Spring Tool Suit: STS é um eclipse com vários plugins úteis para trabalho com o Spring.
+- MVC: padrão de projeto de software.
+- REST: é um estilo arquitetural escrito em cima do HTTP e composto por determinadas regras.
 
 ## Spring MVC
 

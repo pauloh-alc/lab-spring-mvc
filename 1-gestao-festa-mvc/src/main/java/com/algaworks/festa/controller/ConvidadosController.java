@@ -1,7 +1,5 @@
 package com.algaworks.festa.controller;
 
-import javax.validation.Valid;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -28,7 +26,7 @@ public class ConvidadosController {
 	}
 
 	@PostMapping("/convidados")
-	public String salvar(@Valid Convidado convidado) {
+	public String salvar(Convidado convidado) {
 		this.convidados.save(convidado);
 		return "redirect:/convidados";
 	}
