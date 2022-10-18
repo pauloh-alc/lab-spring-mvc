@@ -11,21 +11,32 @@ Os projetos criados nesse repositório foram desenvolvidos seguindo algum materi
 * O que foi abordado: 
     1. Criação de uma classe no pacote controller chamada ConvidadosController composta por dois métodos.
     2. Os métodos foram assinados com as anotações @GetMapping e @PostMapping com o objetivo de mapear quais métodos iriam responder a determinadas requisições.
-    3. Ainda na classe que representa o controller (intercepta requisições) foi criado um atributo de instância chamado convidados assinado com a anotação @Autowired para a injeção de dependência.
+    3. Ainda na classe que representa o controller (classe intercepta requisições) foi criado um atributo de instância chamado convidados assinado com a anotação @Autowired para a injeção de dependência.
     4. A classe Convidado presente no pacote model, representa um dos elementos do Model, uma classe bem simples, sem regras muitas regras e composta por três campos.
     5. Uso de uma interface chamada Convidados que extend de JpaRepository
     6. A View do projeto está presente em src/main/resource/templates, que possui apenas um arquivo .html que faz uso do bootstrap e thymeleaf
     7. O aquivo application.properties possui algumas configurações básicas relacionada ao thymeleaf e a configuração da URL, nome e senha da base de dados.
     8. Esse projeto possui também um arquivo import.sql que foi usado para criação de uma in-memory database. Porém, o arquivo application.properties está configurado para criar uma base de dados chamada festa no MySQL.  
 
-2. Cadastro de Jedi - básico
-- Objetivo: começar ententer o padrão de projeto MVC.
-- O que foi abordado:
-
 1 - Gestão de festas - tela de autenticação
 ![Screenshot](img/tela-autenticacao.png)
 2 - Gestão de festas - tela de exibição e cadastro
 ![Screenshot](img/tela-cadastro-de-convidados.png)
+
+2. Cadastro de Jedi - básico
+* Objetivo: começar ententer o padrão de projeto MVC.
+* O que foi abordado:
+    1. Criação de uma classe no pacote controller chamada JediController composta por três métodos.
+    2. Dois métodos foram assinados com a anotação @GetMapping e um com o @PostMapping. O objetivo era mapear quais métodos iriam responder a determinadas requisições do usuário. Por exemplo, se a requisição GET fosse para o /jedi o método jedi() {...} "iria atender". Se fosse /new-jedi o método newJedi() {...} iria "atender" essa requisição. E por fim, se fosse uma requisição POST feita para o /jedi o método createJedi iria "atender"
+    3. Ainda na classe qque representa o controller (classe que intercepta requisições) foi criado um atributo chamado convidados assinado com a anotação @Autowired para a injeção de dependência.
+    4. A classe Jedi presente no pacote model, representa um dos elementos do Model.
+    5. A classe JediRepository presente no pacote repository possui uma lista que vai armazenar cada jedi cadastrado.
+    6. A View do projeto está presente em src/main/resource/templates, são os dois arquivos HTML que possui somente código html e utiliza thymeleaf.
+
+1 - Cadastro de Jedi - tela de cadastro
+![Screenshot](img/jedi-cadastro.png)
+2 - Cadastro de Jedi - tela de exibição
+![Screenshot](img/jedi-exibicao.png)
 
 ## Conceitos iniciais
 
