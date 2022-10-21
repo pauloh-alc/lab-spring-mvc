@@ -51,6 +51,29 @@ Os projetos criados nesse repositório foram desenvolvidos seguindo algum materi
 2 - Cadastro de Jedi - tela de Edição de Jedi
 ![Screenshot](img/interface-web-edit.png)
 
+4. CRUD - API REST para Jedi
+Objetivo: começar entender o estilo arquitetural REST
+O que foi abordado:
+    1. Criação dos seguintes endpoints GET: /api/jedi, /api/jedi/{id}, POST: /api/jedi, PUT: /api/jedi/{id}, DELETE: /api/jedi/{id}
+    2. No modelo rest não foi utilizado interface web, mas sim o uso de uma cliente HTTP, i.e, Postman
+    3. Para criar recursos foi utilizado -> POST; Para recuperar recursos foi utilizado -> GET
+
+
+1 - GET - 
+![Screenshot](img/GET.png)
+2 - GET de um Jedi específico - 
+![Screenshot](img/GET-com-id.png)
+3 - POST - 
+![Screenshot](img/POST.png)
+4 - PUT - 
+![Screenshot](img/PUT.png)
+5 - GET após fazer um PUT 
+![Screenshot](img/GET-apos-PUT.png)
+6 - DELETE  
+![Screenshot](img/DELETE.png)
+7 - GET spós fazer um DELETE  
+![Screenshot](img/GET-apos-DELETE.png)
+
 ## Conceitos iniciais
 
 - Spring: não é um framework apenas, mas um conjunto de projetos (o spring seria mais um Ecossistema).
