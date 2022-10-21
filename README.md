@@ -52,8 +52,8 @@ Os projetos criados nesse repositório foram desenvolvidos seguindo algum materi
 ![Screenshot](img/interface-web-edit.png)
 
 4. CRUD - API REST para Jedi
-Objetivo: começar entender o estilo arquitetural REST
-O que foi abordado:
+* Objetivo: começar entender o estilo arquitetural REST
+* O que foi abordado:
     1. Criação dos seguintes endpoints GET: /api/jedi, /api/jedi/{id}, POST: /api/jedi, PUT: /api/jedi/{id}, DELETE: /api/jedi/{id}
     2. No modelo rest não foi utilizado interface web, mas sim o uso de uma cliente HTTP, i.e, Postman
     3. Para criar recursos foi utilizado -> POST; Para recuperar recursos foi utilizado -> GET
@@ -71,7 +71,7 @@ O que foi abordado:
 ![Screenshot](img/GET-apos-PUT.png)
 6 - DELETE  
 ![Screenshot](img/DELETE.png)
-7 - GET spós fazer um DELETE  
+7 - GET após fazer um DELETE  
 ![Screenshot](img/GET-apos-DELETE.png)
 
 ## Conceitos iniciais
