@@ -38,6 +38,19 @@ Os projetos criados nesse repositório foram desenvolvidos seguindo algum materi
 2 - Cadastro de Jedi - tela de exibição
 ![Screenshot](img/jedi-exibicao.png)
 
+3. Cadastro de Jedi - data & validator
+* Objetivo: começar a entender o padrão de projeto MVC.
+* O que foi abordado:
+    1. Criação de uma classe no pacote controller chamada JediController composta por 6 métodos.
+    2. 5 métodos foram anotados com @GetMapping (jedi, createJedi, search, deleteJedi, updateJedi) e 1 método com o @PostMapping (createJedi)
+    3. Se uma requisição GET for para /jedi o método jedi() {...} é chamado. Se a requisição GET for para /newJedi create createJedi() {...} é chamado. Se uma requisição POST for feita para /jedi, createJedi() {...} é chamado. Se for uma requisição GET para /search o método jediSearch é chamado. Se for uma requisição GET para /jedi/{id}/delete o método deleteJedi será chamado. E por fim, se for uma requisição GET para /jedi/{id}/update o método updateJedi será chamado.
+    4. Na pasta src/main/resource/templates foi adicionado outro elemento para o View do projeto, o arquivo edit-jedi.html
+
+1 - Cadastro de Jedi - tela de Listagem
+![Screenshot](img/interface-web-listagem.png)
+2 - Cadastro de Jedi - tela de Edição de Jedi
+![Screenshot](img/interface-web-edit.png)
+
 ## Conceitos iniciais
 
 - Spring: não é um framework apenas, mas um conjunto de projetos (o spring seria mais um Ecossistema).
@@ -47,6 +60,7 @@ Os projetos criados nesse repositório foram desenvolvidos seguindo algum materi
 - Spring boot: analisa o projeto e automaticamente o configura.
 - Spring Security: projeto que trata da segurança em nível de aplicação.
 - Thymeleaf: não é um projeto Spring, mas uma biblioteca que foi criada para facilitar a criação da camada de view.
+
 - Maven: gerenciador de dependências.
 - Spring Tool Suit: STS é um eclipse com vários plugins úteis para trabalho com o Spring.
 - MVC: padrão de projeto de software.
