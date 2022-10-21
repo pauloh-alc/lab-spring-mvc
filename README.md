@@ -55,8 +55,8 @@ Os projetos criados nesse repositório foram desenvolvidos seguindo algum materi
 * Objetivo: começar entender o estilo arquitetural REST
 * O que foi abordado:
     1. Criação dos seguintes endpoints GET: /api/jedi, /api/jedi/{id}, POST: /api/jedi, PUT: /api/jedi/{id}, DELETE: /api/jedi/{id}
-    2. No modelo rest não foi utilizado interface web, mas sim o uso de uma cliente HTTP, i.e, Postman
-    3. Para criar recursos foi utilizado -> POST; Para recuperar recursos foi utilizado -> GET
+    2. No modelo rest não foi utilizado interface web, mas sim o uso de um cliente HTTP, i.e, Postman
+    3. Para criar recursos foi utilizado -> POST; Para recuperar recursos foi utilizado -> GET; Para atualizar recursos foi utilizado o PUT e para deletar recursos foi utilizado o DELETE.
 
 
 1 - GET - 
@@ -73,6 +73,12 @@ Os projetos criados nesse repositório foram desenvolvidos seguindo algum materi
 ![Screenshot](img/DELETE.png)
 7 - GET após fazer um DELETE  
 ![Screenshot](img/GET-apos-DELETE.png)
+
+5. Refatorando projeto 4 - API REST
+* Objetivo: começar a entender o estilo arquitetural REST;
+* O que foi feito:
+    1. Refatoração. Foi criado uma classe chamada JediService para organizar melhor o projeto. 
+    2. Criação da Classe ResourceAdvice, assinada com @ControllerAdvice - essa classe possui um método assinado com duas anotações, a primeira é @ResponseStatus e a segunda ExceptionHandler. Essas duas anotações serão importante quando algum recurso não for encontrado, fazendo com que o método retorne o status 404 - NOT FOUND
 
 ## Conceitos iniciais
 
