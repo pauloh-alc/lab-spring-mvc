@@ -80,6 +80,23 @@ Os projetos criados nesse repositório foram desenvolvidos seguindo algum materi
     1. Refatoração. Foi criado uma classe chamada JediService para organizar melhor o projeto. 
     2. Criação da Classe ResourceAdvice, assinada com @ControllerAdvice - essa classe possui um método assinado com duas anotações, a primeira é @ResponseStatus e a segunda ExceptionHandler. Essas duas anotações serão importante quando algum recurso não for encontrado, fazendo com que o método retorne o status 404 - NOT FOUND
 
+6. Criação de aplicação REST com Spring Web MVC
+* Objetivo: desenvolver um serviço Web estilo Spring Boot REST para lidar com operações CRUD de um banco de dados H2 na memória.
+* O que foi abordado: basicamente foi criado um controlador REST para criar os seguintes endpoints da API REST: GET /v1/soldado para listar todos os soldados; GET /v1/soldado/{id} para encontrar um soldado cujo id={:id}; POST /v1/soldado para salvar um soldado; PUT /v1/soldado/{id} para atualizar um soldado onde id={:id}; DELETE /v1/soldado/{id} para deletar um soldado onde id={:id}
+
+1 - GET /v1/soldado
+![Screenshot](img/GET-apos-POST-restfull.png)
+2 - GET /v1/soldado/{id}
+![Screenshot](img/GET-soldado-especifico-restfull.png)
+3 - POST /v1/soldado
+![Screenshot](img/POST-restfull.png)
+4 - PUT /v1/soldado/{id}
+![Screenshot](img/PUT-restfull.png)
+5 - GET /v1/soldado após PUT
+![Screenshot](img/GET-apos-PUT-restfull.png)
+6 - DELETE /v1/soldado/{id} 
+![Screenshot](img/DELETE-do-soldado2-restfull.png)
+
 ## Conceitos iniciais
 
 - Spring: não é um framework apenas, mas um conjunto de projetos (o spring seria mais um Ecossistema).
