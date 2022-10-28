@@ -95,7 +95,13 @@ Os projetos criados nesse repositório foram desenvolvidos seguindo algum materi
 5 - GET /v1/soldado após PUT
 ![Screenshot](img/GET-apos-PUT-restfull.png)
 6 - DELETE /v1/soldado/{id} 
-![Screenshot](img/DELETE-do-soldado2-restfull.png)
+![Screenshot](img/DELETE-do-soldado-2-restfull.png)
+
+7. Um serviço web estilo Spring Boot REST para lidar com CRUD
+
+![Screenshot](img/endpoints.png)
+![Screenshot](img/endpoints-postman.png)
+![Screenshot](img/dot-java.png)
 
 ## Conceitos iniciais
 
